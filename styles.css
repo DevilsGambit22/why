@@ -1,0 +1,160 @@
+:root{--bg:#07111f;--glass:rgba(7,16,31,.88);--line:rgba(255,255,255,.14);--gold:#f5d96b;--blue:#77c8ff;--green:#39df73;--pink:#ef5b9b;--text:#eef6ff;--muted:#9db0c8}*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;color:var(--text);background:#030913}body:before{content:"";position:fixed;inset:0;background:linear-gradient(rgba(3,9,19,.25),rgba(3,9,19,.55)),url('assets/lady-justice-bg.jpg') center/cover fixed;z-index:-3}.ambient{position:fixed;inset:0;overflow:hidden;z-index:-2;pointer-events:none}.ambient:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 0,rgba(255,190,72,.14),transparent 40%)}#matrix{position:absolute;inset:0;opacity:.25}.matrix-col{position:absolute;top:-40%;font:700 12px/1.55 ui-monospace,monospace;color:#b8dcff;text-shadow:0 0 10px currentColor;writing-mode:vertical-rl;animation:fall linear infinite}.shell{width:min(100%,430px);min-height:100vh;margin:0 auto;background:linear-gradient(180deg,rgba(5,13,27,.88),rgba(7,17,34,.96));border-inline:1px solid rgba(255,255,255,.12);box-shadow:0 0 60px #000;padding:16px}.hero{min-height:480px;border-radius:24px;padding:24px 18px 18px;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(180deg,rgba(4,10,20,.05) 5%,rgba(5,13,27,.88) 72%,rgba(5,13,27,.98)),url('assets/lady-justice-bg.jpg') 48% center/cover;border:1px solid var(--line);overflow:hidden;position:relative}.crest{width:70px;height:70px;object-fit:cover;border-radius:50%;border:2px solid var(--gold);box-shadow:0 0 25px rgba(245,217,107,.35);margin-bottom:14px}.eyebrow,.section-label{font-size:11px;letter-spacing:.16em;font-weight:900;color:#bdebc6}.hero h1{font:800 38px/1 Georgia,serif;margin:7px 0 10px;text-shadow:0 2px 15px #000}.motto{margin:0 0 15px;color:#d8e5f3}.clock-card{display:grid;grid-template-columns:1fr auto;gap:4px 10px;padding:14px 16px;border:1px solid var(--line);border-radius:16px;background:rgba(4,10,20,.55);backdrop-filter:blur(8px)}.clock-card span{grid-column:1/-1;color:var(--muted);font-size:10px;letter-spacing:.14em}.clock-card strong{font-size:23px}.clock-card b{align-self:center;color:#bcd4ee;font-size:12px}.primary{margin-top:12px;padding:17px;border-radius:14px;background:linear-gradient(135deg,#f6df74,#e9c846);color:#1c2330;text-decoration:none;font-weight:900;display:flex;justify-content:space-between;box-shadow:0 8px 30px rgba(245,217,107,.18)}.tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:14px 0}.tab{border:1px solid var(--line);background:rgba(10,24,45,.72);color:#b9d7ff;padding:11px 8px;border-radius:12px;font-weight:800;cursor:pointer}.tab.active{background:var(--gold);color:#18202c}.panel{display:none}.active-panel{display:block}.card,.panel:not(#overview){border:1px solid var(--line);border-radius:20px;background:var(--glass);padding:17px;margin:12px 0;box-shadow:inset 0 1px rgba(255,255,255,.03);backdrop-filter:blur(10px)}h2{font:800 25px/1.08 Georgia,serif;margin:6px 0 10px}.sub,.card p,small{color:var(--muted)}.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.stats-grid article{background:rgba(13,30,55,.88);border:1px solid var(--line);border-radius:14px;padding:12px;text-align:center}.stats-grid span{display:block;font-size:9px;color:var(--muted);letter-spacing:.1em}.stats-grid strong{display:block;font-size:22px;margin-top:5px}.progress{height:5px;background:#182943;border-radius:9px;overflow:hidden;margin:12px 0}.progress i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--gold),#fff1a3);transition:width .6s}.card-head{display:flex;justify-content:space-between;align-items:flex-start}.card-head button{border:1px solid var(--line);background:#10223d;color:#dff;border-radius:10px;padding:8px 11px;font-size:18px}.record-total{color:var(--muted);font-size:12px;margin:5px 0 10px}.record-total strong{color:#fff}.wdl{height:16px;border-radius:12px;display:flex;overflow:hidden;background:#14233a}.wdl span{min-width:0;transition:width .5s}.wins{background:var(--green)}.draws{background:var(--blue)}.losses{background:var(--pink)}.legend{display:flex;justify-content:space-between;font-size:11px;margin:10px 2px 8px}.legend span:nth-child(1){color:var(--green)}.legend span:nth-child(2){color:var(--blue)}.legend span:nth-child(3){color:var(--pink)}.breakdown{display:grid;gap:5px;margin:10px 0;font-size:11px;color:#c5d6e8}.quote{background:linear-gradient(135deg,rgba(18,36,78,.92),rgba(9,20,42,.94))}.quote blockquote{font:italic 700 18px/1.5 Georgia,serif;margin:12px 0;color:#dff1ff}.quote cite{color:var(--gold);font-weight:800}.owner{cursor:pointer}.owner-row{display:grid;grid-template-columns:64px 1fr auto;align-items:center;gap:12px}.owner-row img,.person img{width:58px;height:58px;border-radius:50%;object-fit:cover;border:1px solid var(--gold)}.owner-row h2{font-size:20px;margin:0}.owner-row p{margin:4px 0}.owner-row strong{font-size:12px;color:var(--gold)}.owner-row>span{font-size:34px}.live{font-size:9px;color:var(--green);font-weight:900}.rules-window{height:330px;overflow:hidden;position:relative;margin:10px 0;border-block:1px solid rgba(255,255,255,.08);mask-image:linear-gradient(transparent,#000 10%,#000 90%,transparent)}.rules-track{position:absolute;width:100%;animation:rulesScroll 78s linear infinite;padding:120px 5px}.rules-window:hover .rules-track,.rules-window.paused .rules-track{animation-play-state:paused}.rule{padding:11px 5px;border-bottom:1px solid rgba(255,255,255,.06)}.rule b{display:block;color:var(--gold);font:800 16px Georgia,serif;margin-bottom:5px}.rule p{font-size:12px;line-height:1.5;margin:0;color:#c6d7e8}.people{display:grid;gap:9px;margin-top:12px}.person{display:grid;grid-template-columns:52px 1fr auto;align-items:center;gap:10px;padding:10px;border:1px solid var(--line);border-radius:14px;background:#0b1b31;text-decoration:none;color:inherit}.person img{width:48px;height:48px}.person b{display:block}.person small{display:block;margin-top:3px}.rating{color:var(--gold);font-weight:900;font-size:12px}.title-badge{background:#d7efff;color:#10253d;border-radius:5px;padding:2px 5px;font-size:10px;margin-right:4px}.link-grid{display:grid;gap:9px}.link-grid a{display:flex;justify-content:space-between;padding:16px;border:1px solid #2b68a6;border-radius:14px;background:linear-gradient(135deg,#0d315c,#0a203c);color:#eaf6ff;text-decoration:none;font-weight:800}footer{display:flex;align-items:center;gap:10px;padding:20px 8px;color:#a9bfd6;font-size:11px}footer img{width:38px;height:38px;border-radius:50%;object-fit:cover}.modal{position:fixed;inset:0;background:rgba(0,0,0,.72);display:none;place-items:center;padding:20px;z-index:20}.modal.open{display:grid}.modal-card{width:min(390px,100%);max-height:85vh;overflow:auto;background:#08172a;border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 20px 80px #000;position:relative}.modal-card>img{width:90px;height:90px;border-radius:50%;object-fit:cover;border:2px solid var(--gold);margin-bottom:12px}.close{position:absolute;right:14px;top:14px;border:0;background:#142741;color:#fff;border-radius:50%;width:34px;height:34px;font-size:22px}.rating-list{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:15px 0}.rating-list div{padding:10px;background:#0e223e;border-radius:10px;font-size:11px}.rating-list b{display:block;color:var(--gold);font-size:17px}.loading{color:var(--muted);padding:20px;text-align:center}@keyframes fall{to{transform:translateY(180vh)}}@keyframes rulesScroll{from{transform:translateY(0)}to{transform:translateY(-72%)}}@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}.matrix-col{display:none}.rules-track{position:static;transform:none;padding:10px}.rules-window{overflow:auto;mask-image:none}}@media(max-width:360px){.shell{padding:10px}.hero h1{font-size:32px}.legend{font-size:10px}}
+
+.vote-note{display:block;margin:8px 0 5px;color:var(--muted);font-size:10px;font-style:italic}
+
+.matrix-card{overflow:hidden}.matrix-board{position:relative;height:190px;margin:10px 0;border:1px solid rgba(119,200,255,.22);border-radius:14px;overflow:hidden;background:linear-gradient(180deg,rgba(1,7,14,.96),rgba(3,15,27,.98));box-shadow:inset 0 0 28px rgba(67,180,255,.08)}.matrix-board:before,.matrix-board:after{content:"";position:absolute;left:0;right:0;height:28px;z-index:3;pointer-events:none}.matrix-board:before{top:0;background:linear-gradient(#020b15,transparent)}.matrix-board:after{bottom:0;background:linear-gradient(transparent,#020b15)}.matrix-board-col{position:absolute;top:-130%;white-space:pre-line;text-align:center;font:800 11px/1.35 ui-monospace,SFMono-Regular,Consolas,monospace;color:#8fd5ff;text-shadow:0 0 7px currentColor;opacity:.85;animation:matrixBoardFall linear infinite}.matrix-board-col:nth-child(3n){color:#f5d96b}.matrix-board-col:nth-child(4n){color:#8ff0a4}@keyframes matrixBoardFall{to{transform:translateY(460px)}}#recordStatus{display:block;margin-top:7px}.vote-note{display:block;margin-top:6px}.rating-list div:before{content:"CURRENT ";display:block;font-size:8px;letter-spacing:.12em;color:#7f95ad;margin-bottom:3px}@media(prefers-reduced-motion:reduce){.matrix-board-col{animation:none!important;position:static;display:inline-block;vertical-align:top;width:8%;transform:none!important}}
+
+
+/* ---------- V2.4 INTERACTIVE LIGHT SHOW ---------- */
+:root{--mx:50vw;--my:50vh;--hover-lift:-7px}
+body{overflow-x:hidden}
+
+/* Full-page RGB aurora behind the sidebar. */
+.rgb-show{position:fixed;inset:-18vmax;z-index:-2;pointer-events:none;overflow:hidden;opacity:.78;filter:saturate(1.35)}
+.rgb-show:before{content:"";position:absolute;inset:0;background:
+  radial-gradient(circle at 20% 28%,rgba(255,0,128,.48),transparent 27%),
+  radial-gradient(circle at 78% 22%,rgba(0,207,255,.50),transparent 28%),
+  radial-gradient(circle at 72% 76%,rgba(131,0,255,.48),transparent 31%),
+  radial-gradient(circle at 24% 78%,rgba(0,255,153,.38),transparent 27%),
+  conic-gradient(from 0deg at 50% 50%,rgba(255,50,50,.25),rgba(255,199,0,.20),rgba(0,255,145,.22),rgba(0,199,255,.24),rgba(120,55,255,.28),rgba(255,0,140,.25),rgba(255,50,50,.25));
+  animation:rgbAurora 16s ease-in-out infinite alternate, rgbSpin 26s linear infinite;transform-origin:center}
+.rgb-show:after{content:"";position:absolute;inset:12%;background:repeating-linear-gradient(115deg,transparent 0 55px,rgba(255,255,255,.025) 56px 57px);mix-blend-mode:screen;animation:rgbSweep 9s linear infinite}
+@keyframes rgbAurora{0%{transform:translate3d(-4%,-2%,0) scale(1.03);filter:hue-rotate(0deg) blur(24px)}50%{transform:translate3d(4%,3%,0) scale(1.11);filter:hue-rotate(75deg) blur(34px)}100%{transform:translate3d(-1%,5%,0) scale(1.06);filter:hue-rotate(145deg) blur(28px)}}
+@keyframes rgbSpin{to{rotate:360deg}}
+@keyframes rgbSweep{to{transform:translate3d(180px,-120px,0)}}
+
+/* Cursor-following spotlight. The JS updates --mx/--my. */
+.cursor-spotlight{position:fixed;left:0;top:0;width:460px;height:460px;margin:-230px 0 0 -230px;border-radius:50%;pointer-events:none;z-index:50;opacity:.9;transform:translate3d(var(--mx),var(--my),0);background:radial-gradient(circle,rgba(255,255,255,.20) 0%,rgba(126,220,255,.12) 22%,rgba(116,74,255,.08) 42%,transparent 68%);mix-blend-mode:screen;filter:blur(3px);transition:opacity .2s ease}
+body:not(.cursor-active) .cursor-spotlight{opacity:0}
+
+/* Subtle local spotlight inside the sidebar surface. */
+.shell{position:relative;isolation:isolate}
+.shell:before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(380px circle at calc(var(--mx) - max(0px, (100vw - min(100vw,430px))/2)) var(--my),rgba(120,205,255,.10),transparent 72%)}
+
+/* Make major surfaces physically lift toward the pointer. */
+.card,.stats-grid article,.clock-card,.primary,.tab,.person,.matrix-board,.rules-window,.owner-row,footer,.modal-card{transform:translateZ(0);transition:transform .22s cubic-bezier(.2,.8,.2,1),box-shadow .22s ease,border-color .22s ease,filter .22s ease,background-color .22s ease}
+.card:hover,.stats-grid article:hover,.clock-card:hover,.person:hover,.matrix-board:hover,.rules-window:hover,.owner:hover{transform:translateY(var(--hover-lift)) scale(1.018);border-color:rgba(164,222,255,.55);box-shadow:0 18px 42px rgba(0,0,0,.38),0 0 28px rgba(68,167,255,.18);filter:brightness(1.07)}
+.primary:hover,.tab:hover{transform:translateY(-5px) scale(1.035);box-shadow:0 14px 34px rgba(0,0,0,.34),0 0 28px rgba(245,217,107,.24);filter:brightness(1.09)}
+.person:hover{z-index:3}
+.card:hover h2,.person:hover b,.owner:hover h2{filter:drop-shadow(0 0 8px rgba(255,255,255,.22))}
+.crest,.owner-row img,.person img,footer img{transition:transform .24s cubic-bezier(.2,.8,.2,1),box-shadow .24s ease,filter .24s ease}
+.crest:hover,.owner:hover .owner-row img,.person:hover img,footer:hover img{transform:scale(1.11) rotate(-2deg);box-shadow:0 0 0 3px rgba(255,255,255,.08),0 0 28px rgba(245,217,107,.40);filter:brightness(1.1)}
+.card-head button:hover,.close:hover{transform:translateY(-3px) scale(1.08);box-shadow:0 8px 22px rgba(67,180,255,.28)}
+
+/* Let RGB light breathe around the central panel without compromising readability. */
+.shell{box-shadow:0 0 35px rgba(0,0,0,.72),0 0 70px rgba(56,160,255,.13)}
+.hero{box-shadow:inset 0 0 60px rgba(0,0,0,.20),0 16px 45px rgba(0,0,0,.25)}
+
+/* Punch up the matrix board so it reads as a deliberate live module. */
+.matrix-board{height:210px;box-shadow:inset 0 0 34px rgba(67,180,255,.13),0 0 26px rgba(0,145,255,.08)}
+.matrix-board-col{opacity:.98;text-shadow:0 0 7px currentColor,0 0 15px currentColor}
+
+@media (hover:none),(pointer:coarse){.cursor-spotlight{display:none}.card:hover,.stats-grid article:hover,.clock-card:hover,.person:hover,.matrix-board:hover,.rules-window:hover,.owner:hover,.primary:hover,.tab:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){.rgb-show:before,.rgb-show:after{animation:none!important}.rgb-show{opacity:.38}.cursor-spotlight{display:none}.card,.stats-grid article,.clock-card,.primary,.tab,.person,.matrix-board,.rules-window,.owner-row,footer,.modal-card{transition:none!important}.card:hover,.stats-grid article:hover,.clock-card:hover,.person:hover,.matrix-board:hover,.rules-window:hover,.owner:hover,.primary:hover,.tab:hover{transform:none!important}}
+
+/* ---------- V2.5 TRUE MATRIX + FULL RGB STAGE ---------- */
+/* The unused page area is now an actual animated RGB stage, not a dark matte. */
+body{background:#02040a}
+body:before{opacity:.16;filter:saturate(.8) brightness(.55)}
+.rgb-show{inset:0;z-index:0;opacity:1;filter:saturate(1.7) contrast(1.08);background:#02040a}
+.rgb-show:before{inset:-24%;background:
+  radial-gradient(circle at 12% 18%,rgba(255,0,80,.82),transparent 25%),
+  radial-gradient(circle at 86% 18%,rgba(0,190,255,.82),transparent 27%),
+  radial-gradient(circle at 84% 82%,rgba(128,0,255,.78),transparent 29%),
+  radial-gradient(circle at 16% 82%,rgba(0,255,136,.68),transparent 27%),
+  conic-gradient(from 0deg at 50% 50%,#ff004c88,#ff9d0088,#e9ff0080,#00ff8a80,#00c8ff88,#6e3cff88,#ff00c888,#ff004c88);
+  mix-blend-mode:screen;animation:rgbAuroraV25 11s ease-in-out infinite alternate,rgbSpin 22s linear infinite}
+.rgb-show:after{inset:0;background:
+  linear-gradient(115deg,transparent 0 18%,rgba(255,255,255,.09) 22%,transparent 27% 55%,rgba(0,220,255,.07) 61%,transparent 69%),
+  repeating-linear-gradient(90deg,transparent 0 80px,rgba(255,255,255,.018) 81px 82px);
+  mix-blend-mode:screen;animation:rgbSweepV25 7s linear infinite}
+@keyframes rgbAuroraV25{0%{transform:translate3d(-6%,-4%,0) scale(1.12);filter:hue-rotate(0deg) blur(36px)}50%{transform:translate3d(5%,2%,0) scale(1.22);filter:hue-rotate(80deg) blur(46px)}100%{transform:translate3d(-2%,7%,0) scale(1.16);filter:hue-rotate(170deg) blur(40px)}}
+@keyframes rgbSweepV25{0%{transform:translateX(-20%)}100%{transform:translateX(20%)}}
+.shell{position:relative;z-index:2}
+.cursor-spotlight{z-index:8}
+
+/* Genuine binary digital rain. */
+.matrix-board{height:220px;padding:0;background:#01070e;border-color:rgba(100,215,255,.35);box-shadow:inset 0 0 40px rgba(0,140,255,.16),0 0 24px rgba(0,185,255,.12)}
+.matrix-board canvas{display:block;width:100%;height:100%}
+.matrix-board:before{height:34px;background:linear-gradient(#01070e,transparent)}
+.matrix-board:after{height:34px;background:linear-gradient(transparent,#01070e)}
+.matrix-board-col{display:none!important}
+
+/* Secret reveal: intentionally absent from normal layout. */
+.easter-egg{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;padding:18px;background:radial-gradient(circle,rgba(19,33,52,.45),rgba(0,0,0,.96) 68%);opacity:0;visibility:hidden;pointer-events:none;transition:opacity .7s ease,visibility .7s ease;backdrop-filter:blur(14px)}
+.easter-egg.open{opacity:1;visibility:visible;pointer-events:auto}
+.easter-egg img{max-width:min(92vw,760px);max-height:92vh;object-fit:contain;border-radius:18px;box-shadow:0 0 30px rgba(255,220,155,.32),0 0 100px rgba(85,170,255,.24),0 35px 120px #000;transform:scale(.78) translateY(30px);opacity:0;transition:transform 1.1s cubic-bezier(.16,.8,.2,1),opacity .9s ease}
+.easter-egg.open img{transform:scale(1) translateY(0);opacity:1}
+.easter-close{position:fixed;right:18px;top:18px;width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,.2);background:rgba(5,10,18,.72);color:#fff;font-size:24px;cursor:pointer;opacity:.45;transition:opacity .2s,transform .2s}
+.easter-close:hover{opacity:1;transform:scale(1.08)}
+body.easter-active .rgb-show:before{animation-duration:4s,8s;filter:saturate(2)}
+
+@media(prefers-reduced-motion:reduce){.rgb-show:before,.rgb-show:after{animation:none!important}.easter-egg img{transition:none}.matrix-board canvas{opacity:.8}}
+
+/* ---------- V2.8 CHESS.COM EMBED OPTIMIZATION ---------- */
+/* Slim, low-contrast scrollbar for the narrow Chess.com iframe. */
+html{scrollbar-width:thin;scrollbar-color:rgba(119,200,255,.34) rgba(2,8,16,.34)}
+html::-webkit-scrollbar,body::-webkit-scrollbar,.modal-card::-webkit-scrollbar{width:6px;height:6px}
+html::-webkit-scrollbar-track,body::-webkit-scrollbar-track,.modal-card::-webkit-scrollbar-track{background:rgba(2,8,16,.34)}
+html::-webkit-scrollbar-thumb,body::-webkit-scrollbar-thumb,.modal-card::-webkit-scrollbar-thumb{background:linear-gradient(180deg,rgba(119,200,255,.48),rgba(111,82,255,.42));border-radius:999px;border:1px solid rgba(255,255,255,.06)}
+html::-webkit-scrollbar-thumb:hover,body::-webkit-scrollbar-thumb:hover,.modal-card::-webkit-scrollbar-thumb:hover{background:linear-gradient(180deg,rgba(119,200,255,.66),rgba(111,82,255,.58))}
+
+/* The production embed is effectively a 380–430px viewport. */
+@media(max-width:480px){
+  .shell{width:100%;max-width:430px;padding:10px;border-inline-color:rgba(255,255,255,.09);box-shadow:0 0 24px rgba(0,0,0,.68),0 0 48px rgba(56,160,255,.10)}
+  .hero{min-height:410px;padding:18px 14px 14px;border-radius:20px;background-position:48% center}
+  .crest{width:60px;height:60px;margin-bottom:10px}
+  .eyebrow,.section-label{font-size:10px;letter-spacing:.14em}
+  .hero h1{font-size:34px;line-height:.98;margin:5px 0 8px}
+  .motto{font-size:14px;line-height:1.35;margin-bottom:12px}
+  .clock-card{padding:11px 13px;border-radius:14px;grid-template-columns:minmax(0,1fr) auto;gap:2px 8px}
+  .clock-card strong{font-size:20px;line-height:1.05;white-space:nowrap;letter-spacing:-.02em}
+  .clock-card b{font-size:11px;white-space:nowrap}
+  .primary{margin-top:10px;padding:14px 15px;border-radius:13px;font-size:14px;line-height:1.25}
+  .tabs{gap:6px;margin:10px 0}
+  .tab{min-width:0;padding:10px 4px;border-radius:11px;font-size:11px;line-height:1.12;white-space:nowrap;letter-spacing:-.01em}
+  .card,.panel:not(#overview){padding:14px;margin:9px 0;border-radius:17px}
+  h2{font-size:22px;margin:5px 0 8px}
+  .stats-grid{gap:6px}
+  .stats-grid article{padding:10px 5px;border-radius:12px}
+  .stats-grid span{font-size:8px}
+  .stats-grid strong{font-size:20px;margin-top:4px}
+  .record-total{margin:4px 0 8px}
+  .wdl{height:12px;border-radius:999px}
+  .legend{font-size:10px;margin:8px 1px 6px}
+  .breakdown{font-size:10px;margin:7px 0;gap:3px}
+  .vote-note,#recordStatus{font-size:9px;line-height:1.35}
+  .quote blockquote{font-size:16px;line-height:1.42;margin:9px 0}
+  .owner-row{grid-template-columns:52px minmax(0,1fr) auto;gap:10px}
+  .owner-row img{width:50px;height:50px}
+  .owner-row h2{font-size:18px}
+  .owner-row p{font-size:11px;line-height:1.3}
+  .owner-row strong{font-size:11px}
+  .owner-row>span{font-size:28px}
+  .matrix-board{height:170px;margin:8px 0}
+  .rules-window{height:270px;margin:8px 0}
+  .rule{padding:9px 4px}
+  .rule b{font-size:14px}
+  .rule p{font-size:11px;line-height:1.42}
+  .person{grid-template-columns:46px minmax(0,1fr) auto;gap:8px;padding:9px;border-radius:12px}
+  .person img{width:44px;height:44px}
+  .person b{font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .person small{font-size:10px}
+  .rating{font-size:11px}
+  footer{padding:14px 5px;font-size:10px}
+  footer img{width:34px;height:34px}
+
+  /* Keep hover depth premium without letting cards visually collide in the narrow iframe. */
+  .card:hover,.stats-grid article:hover,.clock-card:hover,.person:hover,.matrix-board:hover,.rules-window:hover,.owner:hover{transform:translateY(-3px) scale(1.008)!important}
+  .primary:hover,.tab:hover{transform:translateY(-2px)!important}
+}
+
+@media(max-width:380px){
+  .shell{padding:8px}
+  .hero{min-height:390px;padding:16px 12px 12px}
+  .hero h1{font-size:31px}
+  .tab{font-size:10px;padding-inline:2px}
+  .clock-card strong{font-size:18px}
+  .matrix-board{height:155px}
+  .rules-window{height:250px}
+}
