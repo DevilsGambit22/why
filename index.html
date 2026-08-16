@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ACFA Live Sidebar V2</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="ambient" aria-hidden="true"><div id="matrix"></div></div>
+<main class="shell">
+  <header class="hero">
+    <img class="crest" src="assets/acfa-logo.jpg" alt="And Chess For All crest">
+    <div class="eyebrow">AND CHESS FOR ALL OFFICIAL</div>
+    <h1 id="greeting">Welcome</h1>
+    <p class="motto">Every Player Belongs • Every Move Matters</p>
+    <div class="clock-card"><span>YOUR LOCAL TIME</span><strong id="clock">--:--:--</strong><b id="date">---</b></div>
+    <a class="primary" href="https://www.chess.com/clubs/events/and-chess-for-all-official" target="_blank" rel="noopener">Join Our Upcoming Matches <span>→</span></a>
+  </header>
+
+  <nav class="tabs" aria-label="Sidebar sections">
+    <button class="tab active" data-tab="overview">Overview</button><button class="tab" data-tab="members">Newest Members</button>
+    <button class="tab" data-tab="titled">Titled Players</button>
+  </nav>
+
+  <section id="overview" class="panel active-panel">
+    <div class="stats-grid">
+      <article><span>MEMBERS</span><strong id="memberCount">—</strong></article>
+      <article><span>TITLED</span><strong id="titledCount">—</strong></article>
+      <article><span>CLUB DAY</span><strong id="clubDay">—</strong></article>
+    </div>
+
+    <article class="card life"><div class="section-label">ACFA CLUB LIFE</div><h2><span id="daysTogether">—</span> Days Together</h2><p>Founded May 12, 2026</p><div class="progress"><i id="anniversaryProgress"></i></div><small id="lifeDetail">Growing Together</small></article>
+
+    <article class="card record"><div class="card-head"><div><div class="section-label">CLUB COMPETITIVE RECORD</div><h2>Win / Draw / Loss</h2></div><button id="refreshRecord" title="Refresh">↻</button></div>
+      <div class="record-total"><strong id="completedEvents">—</strong> completed events</div>
+      <div class="wdl" id="wdl"><span class="wins" style="width:33%"></span><span class="draws" style="width:34%"></span><span class="losses" style="width:33%"></span></div>
+      <div class="legend"><span>● <b id="wins">—</b> Wins</span><span>● <b id="draws">—</b> Draws</span><span>● <b id="losses">—</b> Losses</span></div>
+      <div id="formatBreakdown" class="breakdown"></div><small class="vote-note">* Vote Chess is not included in this record.</small><small id="recordStatus">Loading Chess.com club match data…</small>
+    </article>
+
+    <article class="card quote"><div class="section-label">DAILY INSPIRATION</div><h2>Chess Quote of the Day</h2><blockquote id="quoteText"></blockquote><cite id="quoteAuthor"></cite></article>
+
+    <article class="card owner" id="ownerCard" tabindex="0" role="button"><div class="section-label">ABOUT THE OWNER</div><div class="owner-row"><img id="ownerAvatar" src="assets/acfa-logo.jpg" alt="DevilsGambit22"><div><h2>DevilsGambit22</h2><p>Founder • And Chess For All</p><strong id="ownerRating">Highest rating: —</strong></div><span>›</span></div></article>
+
+    <article class="card rules"><div class="card-head"><div><div class="section-label">⚖ ACFA COMMUNITY CODE</div><h2>Club Rules Live Board</h2></div><span class="live">● SCROLLING</span></div>
+      <div class="rules-window"><div class="rules-track" id="rulesTrack"></div></div>
+      <small>Hover or tap to pause • Every Player Belongs • Every Move Matters</small>
+    </article>
+  </section>
+
+  <section id="members" class="panel"><div class="section-label">LIVE MEMBER BOARD</div><h2>Newest Members</h2><p class="sub">Avatar • highest current rating • joined timestamp</p><div id="newestList" class="people"><div class="loading">Loading newest members…</div></div></section>
+  <section id="titled" class="panel"><div class="section-label">ACFA TITLED BOARD</div><h2>Officially Titled Members</h2><div id="titledList" class="people"><div class="loading">Loading titled members…</div></div></section>
+
+  <footer><img src="assets/acfa-logo.jpg" alt=""><span>© 2026 And Chess For All.<br>Built for the ACFA community.</span></footer>
+</main>
+
+<div class="modal" id="ownerModal" aria-hidden="true"><div class="modal-card"><button class="close" id="closeModal">×</button><img id="modalAvatar" src="assets/acfa-logo.jpg" alt=""><div class="section-label">FOUNDER • AND CHESS FOR ALL</div><h2>DevilsGambit22</h2><p>Founder of And Chess For All and creator of the ACFA community, built around competition, creativity, sportsmanship, and belonging.</p><div id="ownerRatings" class="rating-list"></div><a href="https://www.chess.com/member/devilsgambit22" target="_blank" class="primary">View Chess.com Profile →</a></div></div>
+<script src="app.js"></script>
+</body></html>
